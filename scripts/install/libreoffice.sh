@@ -17,7 +17,7 @@ apt install -y libreoffice-writer \
                libreoffice-calc
 
 # Create desktop installation entries
-apps=("libreoffice-writer.desktop" "libeoffice-impress.desktop" "libreoffice-calc.desktop")
+apps=("libreoffice-writer.desktop" "libreoffice-impress.desktop" "libreoffice-calc.desktop")
 
 for app in "${apps[@]}"; do
     cp /usr/share/applications/$app $DESKTOP_PATH
