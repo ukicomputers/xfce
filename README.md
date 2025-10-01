@@ -65,7 +65,7 @@ docker network create --driver bridge xfce
 ```
 Finally, launch the container. Notice that we use `/tmp/.X11-unix/X2` for our `:2` X display, we also pass our external auth file, and share the rendering device with required privileges, with using image name from above:
 ```bash
-docker run -it --network xfce --name xfce -P -v /tmp/.X11-unix/X2:/tmp/.X11-unix/X2:ro -v remote.auth:/home/user/.Xauthority:rw --device /dev/renderD128:/dev/renderD128 --group-add $(getent group render | cut -d: -f3) zerogrid-xfce-ubuntu2404-igpu
+docker run -it --network xfce --name xfce -P -v /tmp/.X11-unix/X2:/tmp/.X11-unix/X2:ro -e DISPLAY=:2 -v "$(pwd)/remote.auth":/home/user/.Xauthority:rw --device /dev/dri/renderD128:/dev/dri/renderD128 --group-add $(getent group render | cut -d: -f3) zerogrid-xfce-ubuntu2404-igpu
 ```
 Note that you need to set `LIBVA_DRIVER_NAME` if you have Intel CPU:
 - add `-e LIBVA_DRIVER_NAME=iHD` if you have newer (10+ gen) Intel CPU with Iris graphics
