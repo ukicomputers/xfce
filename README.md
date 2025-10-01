@@ -67,6 +67,12 @@ Finally, launch the container. Notice that we use `/tmp/.X11-unix/X2` for our `:
 ```bash
 docker run -it --network xfce --name xfce -P -v /tmp/.X11-unix/X2:/tmp/.X11-unix/X2:ro -v remote.auth:/home/user/.Xauthority:rw --device /dev/renderD128:/dev/renderD128 --group-add $(getent group render | cut -d: -f3) zerogrid-xfce-ubuntu2404-igpu
 ```
+Note that you need to set `LIBVA_DRIVER_NAME` if you have Intel CPU:
+- add `-e LIBVA_DRIVER_NAME=iHD` if you have newer (10+ gen) Intel CPU with Iris graphics
+- add `-e LIBVA_DRIVER_NAME=i915` for older Intel CPUs
+
+Otherwise, container startup will fail.
+
 Once we started it, you can interact with it in Xwayland window. You can also start [unicap](https://github.com/ukicomputers/unicap) and interact with remotely on the other machine on port *1234*:
 ```bash
 XAUTHORITY=local.auth DISPLAY=:2 ./unicap-v1.0-x86_64 --port 1234
