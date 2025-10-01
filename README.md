@@ -2,12 +2,12 @@
 Minimal optimized XFCE desktop Docker image for interfacing virtually (thin clients and similar). It includes every required essential for normal user usage including (depending on your image build):
 - Firefox
 - LibreOffice
-- Microsoft Office
+- Microsoft Office Online
 - Python IDLE
 - GIMP
 - Essentials (Ristretto image viewer, Mousepad, nano, wget and similar)
 
-It is optimised to be used remotely with X streaming software, ideally with [unicap](https://github.com/ukicomputers/unicap). You can see full usage demo on the video [here]().
+It is optimised to be used remotely with X streaming software, ideally with [unicap](https://github.com/ukicomputers/unicap). You can see full usage, initialization and demo on the video [here](https://hc-cdn.hel1.your-objectstorage.com/s/v3/691f66da2cc76806317e92507746f16fc24130ca_output.mp4) *(jump to 5:50 if you want to skip preparing part)*.
 
 ![example image](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d725c9457ad23e763a93158973bf6ae328b68484_img_20250728_162801.jpg)
 *(picture showing running XFCE desktop environment remotely via unicap on STM32F7 series microcontroller)*
@@ -83,5 +83,9 @@ This ready environment and Docker image can't be used within any of commerical o
 ```
 XFCE dedicated desktop made by @ukicomputers
 ```
+
+Microsoft Office icons used in this project are **trademarks of Microsoft Corporation**.
+They are used only as icons for desktop shortcuts.
+This project is not affiliated with Microsoft in any way.
 
 xfce is part of **ZeroGrid** project.
