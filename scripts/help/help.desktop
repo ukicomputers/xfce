@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Help
+Comment=ZeroGrid Help on how to resolve errors, interact with desktop and similar.
+Exec=xdg-open /scripts/help/help.html
+Icon=help
+Terminal=false
+Type=Application
+Categories=Education;

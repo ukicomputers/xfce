@@ -1,0 +1,10 @@
+ZeroGrid XFCE dedicated desktop (for remote usage)
+Written by Ugljesa Lukesevic. All rights reserved.
+
+This folder is reserved for internal system usage, since it's contents are used on this machine startup!
+Changing (deleting/modifying/renaming) can cause system loss (and probably not starting the machine/container).
+
+Help is by default added as a shortcut on the desktop, and in application menu.
+You can find direct page here, in "help" directory.
+
+Note: you can run script "dotdesktop_trust.sh" if you want to mass trust desktop executables (since it isn't already).

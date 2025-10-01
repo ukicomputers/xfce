@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft PowerPoint
+Comment=Opens PowerPoint in Microsoft 365
+Exec=xdg-open https://office.com/launch/powerpoint
+Icon=/scripts/install/msoffice/powerpoint.svg
+Terminal=false
+Type=Application
+Categories=Office;Presentation;

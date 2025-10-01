@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft Excel
+Comment=Opens Excel in Microsoft 365
+Exec=xdg-open https://office.com/launch/excel
+Icon=/scripts/install/msoffice/excel.svg
+Terminal=false
+Type=Application
+Categories=Office;Spreadsheet;

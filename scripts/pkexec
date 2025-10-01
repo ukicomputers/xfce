@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# This is replacement version of pkexec
+# Because of isolation (systemd), polkit isn't supported
+# Backup of real pkexec exacutable is named "pkexec.bak"
+
+sudo "${@}"
